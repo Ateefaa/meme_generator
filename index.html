@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Meme Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-heart"></i> Meme Princess <i class="fas fa-heart"></i></h1>
+            <nav>
+                <ul>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#funny">Funny</a></li>
+                    <li><a href="#cute">Cute</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="trending">
+            <div class="container">
+                <h2>Trending Memes</h2>
+                <div id="trending-memes" class="meme-container"></div>
+                <button onclick="getRandomMeme('trending')">Get Random Trending Meme</button>
+            </div>
+        </section>
+
+        <section id="funny">
+            <div class="container">
+                <h2>Funny Memes</h2>
+                <div id="funny-memes" class="meme-container"></div>
+                <button onclick="getRandomMeme('funny')">Get Random Funny Meme</button>
+            </div>
+        </section>
+
+        <section id="cute">
+            <div class="container">
+                <h2>Cute Memes</h2>
+                <div id="cute-memes" class="meme-container"></div>
+                <button onclick="getRandomMeme('cute')">Get Random Cute Meme</button>
+            </div>
+        </section>
+
+        <section id="upload">
+            <div class="container">
+                <h2>Upload Your Own Meme</h2>
+                <input type="file" id="file-input">
+                <button onclick="uploadMeme()">Upload</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meme Princess. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
